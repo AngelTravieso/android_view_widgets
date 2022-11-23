@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -13,7 +14,8 @@ public class MainActivity extends AppCompatActivity {
 
     /*TextView textView;*/
     /*EditText et;*/
-    Button button;
+    /*Button button;*/
+    ImageView image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,18 +32,21 @@ public class MainActivity extends AppCompatActivity {
         /*String input_text = et.getText().toString();*/
 
         // boton
-        button = findViewById(R.id.button101);
+        /*button = findViewById(R.id.button101);*/
 
         // escuchar evento de los botones
 
         // pasa una clase anonima ( new View.OnClickListener() )
-        button.setOnClickListener(new View.OnClickListener() {
+   /*     button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // Especificar las acciones cuando el boton es tocado
                 Toast.makeText(MainActivity.this, "The button is clicked", Toast.LENGTH_SHORT).show();
             }
-        });
+        });*/
+
+        // imagen
+        image = findViewById(R.id.imageView);
 
 
 
